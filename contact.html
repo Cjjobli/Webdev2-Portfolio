@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="contact.js"></script>
+
+    <title>Contact page</title>
+</head>
+<body>
+
+    <main>
+        <section id="contactSection">
+            <h1 id="topbar"> Cj's device</h1>
+            <div id="upVolume"></div>
+            <div id="downVolume"></div>
+            <div id="powerButton"></div>
+            <p id="clock">10:10 PM <span class="date">Thu Apr 24 2024</span></p>
+            <p id="cj">Cj</p>
+            <p id="wifi">ᯤ</p>
+            <img alt="battery icon" src="images/battery.png" id="battery">
+            <a href="index.html" id="back">Back</a>
+
+                <form id="contactme" action="/" method="GET">
+                    <h2>Contact me</h2>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="fullname">Full Name:</label>
+                                <input id="fullname" name="fullname" type="text">
+                                <p id="fullname_error">* Required field</p>
+
+                            </li>
+                            <li>
+                                <label for="phone">Phone Number:</label>
+                                <input id="phone" name="phone" type="number">
+                                <p id="phone_error">* Invalid phone number</p>
+                            </li>
+                            <li>
+                                <label for="email">Email:</label>
+                                <input id="email" name="email" type="text">
+                                <p id="emailformat_error">* Invalid email address</p>
+                            </li>
+                            <li>
+                            <label id="comments" for="comments" type="text"> Comments: </label>
+                            <textarea id="commentsArea" name="comments" rows="5" cols="22" placeholder="Submitting will not send data (not implemented)"></textarea>
+                            <p id="comments_error">* Required field</p>
+
+                            </li>
+                        </ul>
+                        <button type="submit" id="submit" class="btnSubmitClear">Submit</button>
+                        <button type="reset" id="clear" class="btnSubmitClear">Clear</button>
+                    </fieldset>
+                </form>
+
+        </section>
+    </main>
+
+</body>
+</html>
